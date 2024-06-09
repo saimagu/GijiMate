@@ -12,8 +12,8 @@ def get_japanese_day(input_date):
 
 
 def check_character(input_string):
-    # 正規表現を使用して、半角英数字以外の文字を含むかどうかをチェック
-    regex_pattern = r"[^a-z0-9]"  # 半角英数字以外の文字を表す正規表現
+    
+    regex_pattern = r"[^a-z0-9]"  
     if re.search(regex_pattern, input_string):
         return False
     else:
@@ -24,8 +24,8 @@ def check_character(input_string):
 
 
 def check_time(input_string):
-    # 正規表現を使用して、半角英数字以外の文字を含むかどうかをチェック
-    regex_pattern = r"[^0-9:]"  # 半角英数字以外の文字を表す正規表現
+    
+    regex_pattern = r"[^0-9:]"  
     if re.search(regex_pattern, input_string):
         return False
     else:
@@ -55,9 +55,7 @@ if __name__ == "__main__":
     st.sidebar.text(
         "ここに出席管理システムとか\nGROWIの議事録ページとかの\nリンクを貼るのもアリかも。"
     )
-    # if st.sidebar.button("fire"):
-    # for i in (0, 1000):
-    # st.snow()
+
 
     st.write(
         """
