@@ -76,7 +76,7 @@ if __name__ == "__main__":
         unsafe_allow_html=True,
     )
 
-    st.title("議事録補助アプリ")
+    st.title("議事録補助")
     col1, col2 = st.columns([3, 1])
     with col1:
         st.header("📝入力欄")
